@@ -1,0 +1,43 @@
+#Task_1 Ques 2
+num=[]
+for i in range( 2000, 3200):
+    if i%7==0 and 1%5!=0:
+        num.append(i)
+print(num)
+
+
+#Ques 3
+name=input("Enter name: ")
+l=name.split(' ')
+print(' '.join(l[-1::-1]))
+
+
+#Ques 4
+d= int(input("Enyter the diametere: "))
+pi=22/7
+v=(4/3)*pi*(d/2)**3
+print(v)
+
+
+#Tast_2 Ques 1
+num=input("Enter some number with comma: ")
+list=num.split(',')
+print(list)
+
+
+#Ques 2
+n= int(input("Enter no. of * in middle row: "))
+for i in range(1,n*2):
+    if i <=5:
+        for j in range(1,i+1):
+            print('*', end='')
+        print("")
+    elif i>5:
+        for k in range(n*2-i):
+            print('*', end='')
+        print("")
+
+
+#Ques 3
+word=input("Enter Any Word: ")
+print(word[-1::-1])
